@@ -134,7 +134,7 @@ const Singlepackagepage = () => {
                 </div>
             </Carousel></Box>
             <Heading mt="20px">{singleji.title}</Heading>
-            <Flex mt="30px"><Text fontSize="bold">Tripotos  Exclusive Tours & Holiday Packages</Text><Spacer/><Text fontSize="17px"  color="crimson" fontWeight="bold" mt="10px"><Flex><Text>8046162990</Text><Box  fontSize="20px" pt="5px" ml="5px"  color="black"><AiTwotonePhone ml="10px" mt="10px" color="crimson"/></Box> </Flex></Text></Flex>
+            <Flex mt="30px"><Text fontSize="bold">Exclusive Tours & Holiday Packages</Text><Spacer/><Text fontSize="17px"  color="crimson" fontWeight="bold" mt="10px"><Flex><Text>8046162990</Text><Box  fontSize="20px" pt="5px" ml="5px"  color="black"><AiTwotonePhone ml="10px" mt="10px" color="crimson"/></Box> </Flex></Text></Flex>
             <hr/>
             <Flex mt="20px"><Button bg="teal" w="150px">3D-4N</Button><Spacer/><Text fontSize="20px" fontWeight="bold"> ₹{singleji.price} </Text><Text color="grey" ml="10px" fontWeight="17px">/person</Text></Flex>
             <Text fontSize="17px" fontWeight="bold" mt='10px' color="grey">Location</Text>

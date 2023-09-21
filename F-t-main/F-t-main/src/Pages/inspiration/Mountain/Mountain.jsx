@@ -182,18 +182,18 @@ const Mountain=()=>{
       />
       <div id="divafterheader">
         <Breadcrum/>
-        <h1 className="title">Explore the Best Hill Stations in India with Tripoto</h1>
+        <h1 className="title">Explore the Best Hill Stations in India</h1>
         <p id="pbelowtitle">
         Want to feel the chills while exploring the mountain terrains in India? 
         From the breathtaking cold deserts of Ladakh and the picturesque meadows of Kashmir, from the mystical valleys of 
         Himachal to the postcard-perfect villages of Sikkim - we've curated the best travel plans for you!
         </p>
         <h1 style={{ margin: "1rem 0" }} className="Art_title">
-        Book Tripoto's Mindful Retreats
+        Book Mindful Retreats
         </h1>
         <Productcarousel/>
         <h1 style={{ margin: "1rem 0" }} className="Art_title">
-        Tripoto's Ultimate Hill Station Guides | Best Destinations in India
+        Ultimate Hill Station Guides | Best Destinations in India
         </h1>
         <div className="ninedata">
           {nine.map((e, i) => {

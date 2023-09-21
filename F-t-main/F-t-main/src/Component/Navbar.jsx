@@ -12,6 +12,7 @@ import {
   Popover,
   Avatar,
 } from "@chakra-ui/react";
+import  logio  from ".//assests//india-jetset-white.png";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
@@ -55,7 +56,9 @@ export function Navbar() {
     >
       <Box>
         <NavLink to="/">
-          <Image src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" />
+          <Image src={logio} 
+            width="250px"
+          />
         </NavLink>
       </Box>
       <Box>
@@ -94,7 +97,7 @@ export function Navbar() {
             <MenuItem>Explore More</MenuItem>
           </MenuList>
         </Menu>
-       {isAuthc.user=="admin"?<NavLink to="/admin">Admin</NavLink>:""} 
+       {isAuthc.user==="admin"?<NavLink to="/admin">Admin</NavLink>:""} 
         <NavLink to="/packages">Packages</NavLink>
         <Menu>
           <MenuButton as={Box}>Publish Trip </MenuButton>
@@ -109,7 +112,7 @@ export function Navbar() {
           </MenuList>
         </Menu>
         
-        {/* <NavLink>Publish Trip</NavLink> */}
+        <NavLink to="/">Currency Exchange</NavLink>
         {/* <NavLink to="/admin">Admin</NavLink> */}
         {/* <NavLink to="/signup">Sign in</NavLink> */}
         {isAuthc.isAuth ?          <Flex alignItems={'center'}>

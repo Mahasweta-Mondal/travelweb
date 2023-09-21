@@ -4,7 +4,6 @@ import { SimpleGrid,Text, Box,FormControl, Grid, GridItem, Image, Input,Button,F
 import {FcLikePlaceholder} from "react-icons/fc"
 import {AiFillFacebook} from "react-icons/ai"
 import Des from '../../Component/Footer/Comment_box'
-import Nidhi from "../../Component/assests/Nidhi.jpeg"
 import {FaPeriscope} from "react-icons/fa"
 
 import { useEffect } from 'react'
@@ -29,7 +28,7 @@ setTitle(e)
     <SimpleGrid columns={1} spacing={1}>
     <Box mt={2} ml={2}>
     <Link to="/" >
-        <Image src={Nidhi}/>
+        {/* <Image src={Nidhi}/> */}
       </Link>
         </Box >
   <Box height='30px' mt={4}>
@@ -65,42 +64,6 @@ setTitle(e)
 <br/>
 <br/>
 <br/>
-{/* <Container display="flex"   gap={10}>
-<Box h="400px" w="300px" >
-    <Image src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1670311543_20.jpg" borderRadius="10px" w="500px" h="150px"/>
-    <Heading size="20px" mt="10px">Bali Christmas Special Packages</Heading>
-    <Flex mt="10px"><Flex><Box pt="5px"><FaPeriscope color="teal"  />
-    </Box><Text ml="5px" color="teal" fontWeight="bold">Christmas</Text> </Flex><Spacer/>
-    <Button bg="teal" width="60px" height="20px" borderRadius="10px">3D-2N</Button></Flex>
-    <Flex mt="10px"><Flex><Text>₹ 40,000/ </Text><Text color="grey" ml="10px">Person</Text></Flex><Spacer/> <Button border="1px" borderColor="Teal" width="80px" color="teal" fontSize="14px">Get Quotes</Button></Flex>
-</Box>
-<Box h="400px" w="400px" border="0px solid red" >
-    <Image src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654841207_k3_3.jpg" borderRadius="10px" border="0px solid red"  w="500px" h="150px"/>
-    <Heading size="20px" mt="10px">Meghalaya Christmas Special Packages</Heading>
-    <Flex mt="10px"><Flex><Box pt="5px"><FaPeriscope color="teal"  />
-    </Box><Text ml="5px" color="teal" fontWeight="bold">Christmas</Text> </Flex><Spacer/>
-    <Button bg="teal" width="60px" height="20px" borderRadius="10px">5D-4N</Button></Flex>
-    <Flex mt="10px"><Flex><Text>₹ 13,000/ </Text><Text color="grey" ml="10px">Person</Text></Flex><Spacer/> <Button border="1px" borderColor="Teal" width="80px" color="teal" fontSize="14px">Get Quotes</Button></Flex>
-</Box>
-<Box h="400px" w="250px" >
-    <Image src="https://cdn1.tripoto.com/media/filter/tst/img/1691556/Image/1670545068_2.jpg" borderRadius="10px" w="500px" h="150px"/>
-    <Heading size="20px" mt="10px">Split Valley Christmas Special Packages</Heading>
-    <Flex mt="10px"><Flex><Box pt="5px"><FaPeriscope color="teal"  />
-    </Box><Text ml="5px" color="teal" fontWeight="bold">Christmas</Text> </Flex><Spacer/>
-    <Button bg="teal" width="60px" height="20px" borderRadius="10px">3D-2N</Button></Flex>
-    <Flex mt="10px"><Flex><Text>₹ 28,000/ </Text><Text color="grey" ml="10px">Person</Text></Flex><Spacer/> <Button border="1px" borderColor="Teal" width="80px" color="teal" fontSize="14px">Get Quotes</Button></Flex>
-</Box>
-<Box h="400px" w="250px" >
-    <Image src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1670916553_b8.jpg" borderRadius="10px" w="500px" h="150px"/>
-    <Heading size="20px" mt="10px">Bhutan Christmas Special Packages</Heading>
-    <Flex mt="10px"><Flex><Box pt="5px"><FaPeriscope color="teal"  />
-    </Box><Text ml="5px" color="teal" fontWeight="bold">Christmas</Text> </Flex><Spacer/>
-    <Button bg="teal" width="60px" height="20px" borderRadius="10px">3D-2N</Button></Flex>
-    <Flex mt="10px"><Flex><Text>₹ 18,000/ </Text><Text color="grey" ml="10px">Person</Text></Flex><Spacer/> <Button border="1px" borderColor="Teal" width="80px" color="teal" fontSize="14px">Get Quotes</Button></Flex>
-</Box>
-
-</Container> */}
-
 
 
   
@@ -109,7 +72,7 @@ setTitle(e)
 <Flex flexDir={"column"} alignItems={"center"}>
  <Flex alignItems={'flex-start'}  width={"84%"} margin={1}>
     <Text fontSize={useBreakpointValue({ base: '2xl', md: '3xl' ,sm:"xl"})} fontWeight={'bold'}>
-    Plan Your Next Trip Using Tripoto's Complete Destination Guides
+    Plan Your Next Trip Using Complete Destination Guides
     </Text>
     </Flex>
     <Flex width={"84%"} display={{lg:"flex", md: 'box',sm:'box' }} margin={4} flexDir='row' gap='8'>

@@ -177,7 +177,7 @@ const Beaches = () => {
         </p>
         <Showmore />
         <h1 style={{ margin: "1rem 0" }} className="title">
-          Tripoto's Ultimate Beach Guides | Best Beaches in India
+          Ultimate Beach Guides | Best Beaches in India
         </h1>
         <div className="threecard">
           <div>
@@ -256,7 +256,7 @@ const Beaches = () => {
         <h1 className="Art_title">Find The Best Beach Tour Packages</h1>
         <Carousal />
         <h1 className="Art_title">
-          Plan Your Next Beach Vacay in India with Tripoto
+          Plan Your Next Beach Vacay in India 
         </h1>
         <div className="twelvedata">
           {twelve.map((e, i) => {
@@ -282,7 +282,7 @@ const Beaches = () => {
           })}
         </div>
         <h1 style={{ marginTop: "4rem" }} className="Art_title">
-        Plan Your Next International Beach Vacay with Tripoto
+        Plan Your Next International Beach Vacay 
         </h1>
         <div className="eightdata">
           {eighttwo.map((e, i) => {

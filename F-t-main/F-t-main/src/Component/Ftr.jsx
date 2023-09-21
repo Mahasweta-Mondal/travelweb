@@ -1,4 +1,5 @@
 
+import  logio  from ".//assests//india-jetset-black.jpeg";
 
 import { Box, Image, SimpleGrid, VStack } from '@chakra-ui/react'
 import React from 'react'
@@ -14,7 +15,10 @@ export const Ftr = () => {
              <SimpleGrid  columns={[1,2,3,4,5]}  >
             <Box>
               <Box align={"stretch"}>
-                <Box><Image src='https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg'/></Box>
+                {/* <Box><Image src='https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg'/></Box> */}
+                <Image src={logio} 
+                  width="250px"
+                />
                 <Box fontSize="10px" h="10px">India's Largest Travel Community</Box>
                 <Box mt="1rem" display="flex" gap={1}>
                   <FaFacebookSquare cursor="pointer" size={25}/>
@@ -29,7 +33,7 @@ export const Ftr = () => {
             </Box>
             <Box>
               <VStack mt="20px" align='stretch'>
-                <Box fontWeight="500" fontSize="15px">About Tripoto</Box>
+                <Box fontWeight="500" fontSize="15px">About Us</Box>
                 <Box h="14px" cursor="pointer" fontSize="13px">How It Works</Box>
                 <Box h="14px" cursor="pointer" fontSize="13px">FAQ’s</Box>
                 <Box h="14px" cursor="pointer" fontSize="13px">Privacy Policy</Box>
@@ -46,7 +50,7 @@ export const Ftr = () => {
                 <Box h="14px" cursor="pointer" fontSize="13px">Weekend Getaways</Box>
                 <Box h="14px" cursor="pointer" fontSize="13px">Places to Visit</Box>
                 <Box h="14px" cursor="pointer" fontSize="13px">Other Travel Categories</Box>
-                <Box h="14px" cursor="pointer" fontSize="13px">Tripoto Forum</Box>
+                <Box h="14px" cursor="pointer" fontSize="13px">Forum</Box>
                 <Box h="14px" cursor="pointer" fontSize="13px">Honeymoon Packages </Box>
                 <Box h="14px" cursor="pointer" fontSize="13px">Tour Packages</Box>
               </VStack>

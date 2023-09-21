@@ -22,7 +22,7 @@ const BreadCrum = () => {
         </BreadcrumbItem>
 
         <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink>Explore The Best Hill Stations In India With Tripoto</BreadcrumbLink>
+          <BreadcrumbLink>Explore The Best Hill Stations In India</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
     </ChakraProvider>

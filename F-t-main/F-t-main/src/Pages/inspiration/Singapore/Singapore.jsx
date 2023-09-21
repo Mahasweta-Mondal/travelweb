@@ -22,7 +22,7 @@ const Singapore = () => {
         <div className="Bread">
           <BreadCrum />
         </div>
-        <h1 className="title">Reimagine Singapore With Tripoto</h1>
+        <h1 className="title">Reimagine Singapore</h1>
         <Carousal />
         <h1 className="Art_title">
           Shop, Book and Bring Home A Part of Singapore

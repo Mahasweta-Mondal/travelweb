@@ -48,14 +48,14 @@ function Homepage() {
       console.log(searchcity)
       console.log(honeymoon)
   honeymoon.map((ele)=> 
-  { if((ele.location)==searchcity){
+  { if((ele.location)===searchcity){
       console.log(ele)
       navigate (`/packages/${ele.id}`)
       count++
   }
   
   })
-  if(count==0)
+  if(count===0)
   {
       toast({
           title: 'Sorry,this package is not included yet',
@@ -76,7 +76,7 @@ function Homepage() {
     width={'100%'}
     h={'350px'}
     backgroundImage={
-      'url(https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg)'
+      'url(https://img.freepik.com/premium-vector/travel-around-world-destination_42052-7.jpg?w=1480)'
     }
     backgroundSize={'cover'}
     backgroundPosition={'center center'}>
@@ -106,18 +106,6 @@ function Homepage() {
 
 
   <Flex width={'100%'} flexDir={'column'} alignItems={'center'}>
-    <Flex width={"84%"} alignItems={'flex-start'}>
-      <Text  fontSize='xs' color={'gray.500'}>SPONSORED</Text>
-    </Flex>
-    <Flex width={"100%"} alignItems={'center'} flexDir={"column"}>
-    <Image width={"75%"} src='https://tpc.googlesyndication.com/simgad/968686610659141041' alt='img1' />
-    </Flex>
-    <Flex width={"84%"} alignItems={'center'} display={{lg:"flex", md: 'box',sm:'box' }}  flexDir='row' gap='2' margin={'10'}>
-    <Image width={{lg:'25%', md:"80%", sm:"80%"}} height={'5rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png' alt='img1' />
-    <Image width={{lg:'25%', md:"80%", sm:"80%"}} height={'5rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192307_cc.png' alt='img1' />
-    <Image width={{lg:'25%', md:"80%", sm:"80%"}} height={'5rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192273_bb.png' alt='img1' />
-    <Image width={{lg:'25%', md:"80%", sm:"80%"}} height={'5rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192344_dd.png' alt='img1' />
-    </Flex>
     
     <Flex alignItems={'flex-start'} width={"84%"} margin={1}>
     <Text fontSize={useBreakpointValue({ base: '2xl', md: '3xl' ,sm:"xl"})} fontWeight={'bold'}>
@@ -162,22 +150,22 @@ function Homepage() {
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949651_1636600759_110.png' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>10 Best Places To Experience The Chills This Winter</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Kadambari Bhatte (curlytravelmess)</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> PQR Person (curlytravelmess)</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949736_1635179153_pahalgam_gulmarg.jpeg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>15 Winter Destinations, That Are Not Shimla Or Manali</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Karishma Shaikh</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> LMN Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} src='https://static2.tripoto.com/media/filter/tst/img/1/SpotDocument/1478950878_1453102404_panamik_hot_geyser_springs_in_nubra_valley_ladakh.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>Trips To Take With Your Bae This Winter In India</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Mohan Nanihal</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> ABC Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} flexDir="column">
         <Image borderRadius={"7px"}  src='https://static2.tripoto.com/media/filter/tst/img/192200/TripDocument/1571216585_adrithcollage.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>12 Hot Springs In India That Will Warm You Up This Winter</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Disha Kaptopi</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> Any Person</Link></Text>
       </Flex>
     </Flex>
     
@@ -186,22 +174,22 @@ function Homepage() {
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} width={"250px"} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666950604_1666207073_hornbill_festival_pix_by_vikramjit_kakati.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>Nagaland's Hornbill Festival Is Happening This December</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Kadambari Bhatte (curlytravelmess)</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> PQR Person (curlytravelmess)</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} height="164px" src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669621772_1479799117_19594481674_73bfdd5e4a_z.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>26 Best Places In India To Visit This December</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Karishma Shaikh</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> LMN Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} height="164px" src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615182_1669300591_snip20220609_1_1024x573.png' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>10 Events You Can't Miss This Winter In Delhi</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Mohan Nanihal</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> ABC Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} width={"250px"} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669632229_1635615472_picsart_10_30_11_07_24.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>10 Recommended Destinations For Solo Travelers</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Disha Kaptopi</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> Any Person</Link></Text>
       </Flex>
     </Flex>
 
@@ -269,7 +257,7 @@ function Homepage() {
 
     <Flex alignItems={'flex-start'} width={"84%"} margin={1}>
     <Text fontSize={useBreakpointValue({ base: '2xl', md: '3xl' ,sm:"xl"})} fontWeight={'bold'}>
-    Exclusively Curated: Tripoto's Mindful Retreats
+    Exclusively Curated:  Mindful Retreats
     </Text>
     </Flex>
     
@@ -289,7 +277,7 @@ function Homepage() {
         </Flex>
         <Flex gap={2}>
         <Avatar size='xs' name='Oshigaki Kisame' src='https://bit.ly/broken-link' />
-          <Text fontSize={'sm'}>Tripoto's Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
+          <Text fontSize={'sm'}> Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
         </Flex>
       </Flex>
       <Flex width={{lg:'35%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
@@ -307,7 +295,7 @@ function Homepage() {
         </Flex>
         <Flex gap={2}>
         <Avatar size='xs' name='Oshigaki Kisame' src='https://bit.ly/broken-link' />
-          <Text fontSize={'sm'}>Tripoto's Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
+          <Text fontSize={'sm'}> Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
         </Flex>
       </Flex>
       <Flex width={{lg:'35%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
@@ -325,7 +313,7 @@ function Homepage() {
         </Flex>
         <Flex gap={2}>
         <Avatar size='xs' name='Oshigaki Kisame' src='https://bit.ly/broken-link' />
-          <Text fontSize={'sm'}>Tripoto's Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
+          <Text fontSize={'sm'}> Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
         </Flex>
       </Flex>
     </Flex>
@@ -341,22 +329,22 @@ function Homepage() {
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949651_1636600759_110.png' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>10 Best Places To Experience The Chills This Winter</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Kadambari Bhatte (curlytravelmess)</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> PQR Person (curlytravelmess)</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949736_1635179153_pahalgam_gulmarg.jpeg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>15 Winter Destinations, That Are Not Shimla Or Manali</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Karishma Shaikh</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> LMN Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://static2.tripoto.com/media/filter/tst/img/1/SpotDocument/1478950878_1453102404_panamik_hot_geyser_springs_in_nubra_valley_ladakh.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>Trips To Take With Your Bae This Winter In India</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Mohan Nanihal</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> ABC Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://static2.tripoto.com/media/filter/tst/img/192200/TripDocument/1571216585_adrithcollage.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>12 Hot Springs In India That Will Warm You Up This Winter</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Disha Kaptopi</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> Any Person</Link></Text>
       </Flex>
     </Flex>
 
@@ -365,22 +353,22 @@ function Homepage() {
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666950604_1666207073_hornbill_festival_pix_by_vikramjit_kakati.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>Nagaland's Hornbill Festival Is Happening This December</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Kadambari Bhatte (curlytravelmess)</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> PQR Person (curlytravelmess)</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669621772_1479799117_19594481674_73bfdd5e4a_z.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>26 Best Places In India To Visit This December</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Karishma Shaikh</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> LMN Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615182_1669300591_snip20220609_1_1024x573.png' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>10 Events You Can't Miss This Winter In Delhi</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Mohan Nanihal</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> ABC Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669632229_1635615472_picsart_10_30_11_07_24.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>10 Recommended Destinations For Solo Travelers</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Disha Kaptopi</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> Any Person</Link></Text>
       </Flex>
     </Flex>
 
@@ -449,7 +437,7 @@ function Homepage() {
         </Flex>
         <Flex gap={2}>
         <Avatar size='xs' name='Oshigaki Kisame' src='https://bit.ly/broken-link' />
-          <Text fontSize={'sm'}>Tripoto's Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
+          <Text fontSize={'sm'}>Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
         </Flex>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
@@ -467,7 +455,7 @@ function Homepage() {
         </Flex>
         <Flex gap={2}>
         <Avatar size='xs' name='Oshigaki Kisame' src='https://bit.ly/broken-link' />
-          <Text fontSize={'sm'}>Tripoto's Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
+          <Text fontSize={'sm'}> Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
         </Flex>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
@@ -485,7 +473,7 @@ function Homepage() {
         </Flex>
         <Flex gap={2}>
         <Avatar size='xs' name='Oshigaki Kisame' src='https://bit.ly/broken-link' />
-          <Text fontSize={'sm'}>Tripoto's Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
+          <Text fontSize={'sm'}>Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
         </Flex>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
@@ -503,42 +491,14 @@ function Homepage() {
         </Flex>
         <Flex gap={2}>
         <Avatar size='xs' name='Oshigaki Kisame' src='https://bit.ly/broken-link' />
-          <Text fontSize={'sm'}>Tripoto's Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
+          <Text fontSize={'sm'}>Mindful Retreats <Icon as={MdVerified} color='teal' /></Text>
         </Flex>
-      </Flex>
-    </Flex>
-
-    <Flex alignItems={'flex-start'} width={"84%"} margin={1}>
-    <Text fontSize={useBreakpointValue({ base: '2xl', md: '3xl' ,sm:"xl"})} fontWeight={'bold'}>
-    In the Spotlight: Tripoto Creators of the Month - November 2022
-    </Text>
-    </Flex>
-    <Flex alignItems={'flex-start'} width={"84%"} margin={1}>
-    <Text>
-    Tripoto Family is a community of travel content creators who create stunning photo blogs, engaging reels and videos as well as informative articles. Here are the most promising creators of the month who shared their favorite Winter Experiences with us. Kudos to Tripoto's best creators for Nov 2022!
-    </Text>
-    </Flex>
-    <Flex width={"84%"} display={{lg:"flex", md: 'box',sm:'box' }} margin={4} flexDir='row' gap='8'>
-      <Flex width={{lg:'20%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
-        <Image borderRadius={"7px"} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220316_1st_cards_1.jpg' alt='img2' />
-      </Flex>
-      <Flex width={{lg:'20%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
-        <Image borderRadius={"7px"} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220256_19.jpg' alt='img2' />
-      </Flex>
-      <Flex width={{lg:'20%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
-        <Image borderRadius={"7px"} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220280_18.jpg' alt='img2' />
-      </Flex>
-      <Flex width={{lg:'20%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
-        <Image borderRadius={"7px"} src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220306_17.jpg' alt='img2' />
-      </Flex>
-      <Flex width={{lg:'20%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
-        <Image borderRadius={"7px"}  src='https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1667311974_2nd_card.jpg' alt='img2' />
       </Flex>
     </Flex>
     
     <Flex alignItems={'flex-start'} width={"84%"} margin={1}>
     <Text fontSize={useBreakpointValue({ base: '2xl', md: '3xl' ,sm:"xl"})} fontWeight={'bold'}>
-    Plan Your Next Trip Using Tripoto's Complete Destination Guides
+    Plan Your Next Trip Using Complete Destination Guides
     </Text>
     </Flex>
     <Flex width={"84%"} display={{lg:"flex", md: 'box',sm:'box' }} margin={4} flexDir='row' gap='8'>
@@ -558,29 +518,29 @@ function Homepage() {
    
     <Flex alignItems={'flex-start'} width={"84%"} margin={1}>
     <Text fontSize={useBreakpointValue({ base: '2xl', md: '3xl' ,sm:"xl"})} fontWeight={'bold'}>
-    Watch Tripoto's Top Travel Vlogs of the Week
+    Watch  Top Travel Vlogs of the Week
     </Text>
     </Flex>
     <Flex width={"84%"} display={{lg:"flex", md: 'box',sm:'box' }} margin={4} flexDir='row' gap='8'>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://image.mux.com/65Mxwlku9ue7VTvDW8F72z1U5VIOiEaz/thumbnail.jpg?width=600&height=600&time=2.0' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>10 Best Places To Experience The Chills This Winter</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Namita Mittal</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> XYZ Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://cdn1.tripoto.com/media/filter/tst/gen/1789711/Image/1634027797_thumbnail.jpg' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>15 Winter Destinations, That Are Not Shimla Or Manali</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Namita Mittal</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> XYZ Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://image.mux.com/iFVXAVPcgtz02Zcmt2ExiBVFZbYw7iMhN/thumbnail.jpg?width=600&height=600&time=3.01' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>Trips To Take With Your Bae This Winter In India</Text>
-        <Text  fontSize="sm">By  <Link color={'teal'}> Namita Mittal</Link></Text>
+        <Text  fontSize="sm">By  <Link color={'teal'}> XYZ Person</Link></Text>
       </Flex>
       <Flex width={{lg:'25%', md:"80%", sm:"80%"}} gap={3} flexDir="column">
         <Image borderRadius={"7px"} h={'10rem'} src='https://image.mux.com/VZNhkabs2mLwRfjO6j600Q7OmfLxm5VmV/thumbnail.jpg?width=600&height=600&time=2.0' alt='img2' />
         <Text fontSize="md" fontWeight={"bold"}>12 Hot Springs In India That Will Warm You Up This Winter</Text>
-        <Text fontSize="sm">By  <Link color={'teal'}> Namita Mittal</Link></Text>
+        <Text fontSize="sm">By  <Link color={'teal'}> XYZ Person</Link></Text>
       </Flex>
     </Flex>
     </Flex>
