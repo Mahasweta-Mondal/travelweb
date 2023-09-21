@@ -7,6 +7,7 @@ import { Navbar } from './Component/Navbar';
 import HamburgerMenu from './Component/MobileNavbar';
 import ShowContextProvider from "./Context/ShowContext";
 
+
 function App() {
   const [ham, setHam] = useState(false);
   const changeNav = () => {
